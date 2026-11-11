@@ -1,0 +1,212 @@
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    background-color: #f7f6fc;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.navbar-giveit {
+    background-color: #185fed;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-brand {
+    gap: 10px;
+}
+
+.logo1 {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+}
+
+.textlogo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-giveit .nav-link {
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.navbar-giveit .nav-link:hover,
+.navbar-giveit .nav-link:focus {
+    color: white;
+    background-color: #104bc4;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-item {
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.dropdown-item:hover {
+    background-color: #185fed; 
+    color: #f3f4f7;
+}
+
+/* ÁREA PRINCIPAL */
+.hero-giveit {
+    background-color: #eaf0ff;
+}
+
+.hero-giveit h1 {
+    color: #1749b8;
+}
+
+.hero-giveit .lead {
+    line-height: 1.7;
+}
+
+/* IMAGEM DO BANNER */
+.banner1 {
+    border-radius: 22px;
+    height: 420px;
+;
+
+}
+
+/* BOTÃO */
+.btn-primary {
+    background-color: #185fed;
+    border-color: #185fed;
+}
+
+.btn-primary:hover {
+    background-color: #104bc4;
+    border-color: #104bc4;
+}
+
+/* SEÇÃO COMO FUNCIONA */
+.section-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-text p {
+    line-height: 1.8;
+}
+
+/* SEÇÃO SOBRE */
+.about-giveit {
+    background-color: white;
+    border: 1px solid #e4e8f2;
+    line-height: 1.8;
+}
+
+.about-giveit h2 {
+    color: #185fed;
+    margin-bottom: 20px;
+}
+
+/* RODAPÉ */
+.footer-giveit {
+    background-color: #185fed;
+    color: white;
+}
+
+/* CELULARES */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding-top: 10px;
+    }
+
+    .navbar-giveit .nav-link {
+        padding: 10px 12px;
+    }
+
+    .hero-giveit {
+        text-align: center;
+    }
+
+    .hero-giveit h1 {
+        font-size: 2.2rem;
+    }
+
+    .banner1 {
+        max-height: 300px;
+    }
+}
+/* Mantém a logo à esquerda e permite posicionar o menu */
+.navbar-giveit .container-fluid {
+    position: relative;
+}
+
+/* Centraliza o menu na barra */
+@media (min-width: 992px) {
+    .navbar-giveit .navbar-collapse {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+
+    .menu-centralizado {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+
+/* TEXTO DA PÁGINA DE DOAÇÃO */
+.texto-doacao {
+    max-width: 800px;
+    line-height: 1.7;
+}
+
+/* CONTAINER DO MAPA */
+.mapa-container {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* MAPA DO GOOGLE */
+.mapa-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 768px) {
+    .mapa-container {
+        height: 350px;
+    }
+
+    .texto-doacao {
+        font-size: 17px;
+    }
+}
+
+
+/* Menu em telas pequenas */
+@media (max-width: 991.98px) {
+    .navbar-giveit .navbar-collapse {
+        width: 100%;
+    }
+
+    .menu-centralizado {
+        padding-top: 10px;
+    }
+}

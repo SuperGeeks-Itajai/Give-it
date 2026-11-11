@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Giveit | Doe e ajude</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+<link rel="icon" href="Assets/LogoBicon.ico" type="image/png">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-giveit sticky-top">
+    <div class="container-fluid px-4 position-relative">
+
+        <!-- LOGO À ESQUERDA -->
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+            <img src="Assets/LogoB.png" alt="Logo Giveit" class="logo1">
+            <span class="textlogo">Giveit</span>
+        </a>
+
+        <!-- BOTÃO DO MENU PARA CELULARES -->
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- LINKS CENTRALIZADOS -->
+        <div class="collapse navbar-collapse justify-content-center"
+             id="navbarNavDropdown">
+
+            <ul class="navbar-nav menu-centralizado">
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                       href="#home">Início</a>
+                </li>
+
+                <!-- DROPDOWN DE DOAÇÕES -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                       role="button"
+                       data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Escolher doação
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="alimentos.html">
+                                Alimentos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="brinquedos.html">
+                                Brinquedos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="livros.html">
+                                Livros
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="material-escolar.html">
+                                Material escolar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="roupas.html">
+                                Roupas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Sobre</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- INÍCIO: ÁREA PRINCIPAL INSPIRADA NO JUMBOTRON -->
+    <main id="home">
+
+        <section class="container my-5">
+            <div class="p-4 p-md-5 rounded-4 hero-giveit">
+
+                <div class="row align-items-center g-4">
+
+                    <!-- TEXTO -->
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold">
+                            Doe o que você não usa.
+                            Ajude quem precisa.
+                        </h1>
+
+                        <p class="lead mt-3">
+                            O Giveit ajuda você a encontrar lugares que
+                            recebem doações de roupas, brinquedos, livros,
+                            alimentos e muito mais.
+                        </p>
+
+                        <a href="#como-funciona"
+                           class="btn btn-primary btn-lg mt-2">
+                            Como funciona?
+                        </a>
+                    </div>
+
+                    <!-- IMAGEM -->
+                    <div class="col-lg-6 text-center">
+                        <img src="Assets/banner1.png"
+                             alt="Banner do projeto Giveit"
+                             class="img-fluid banner1">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section id="como-funciona" class="container py-4">
+            <div class="text-center section-text">
+                <h2 class="fw-bold">Como funciona?</h2>
+
+                <p class="lead">
+                    Escolha o que deseja doar, encontre um local que receba
+                    esse tipo de item e confira as informações para realizar
+                    sua doação.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- SOBRE O PROJETO -->
+        <section id="sobre" class="container py-5">
+            <div class="p-4 rounded-4 about-giveit">
+
+                <h2 class="fw-bold">Sobre o Giveit</h2>
+
+                <p>
+                    O Giveit é um projeto criado para facilitar o processo
+                    de doação. Muitas pessoas possuem roupas, brinquedos,
+                    livros, alimentos e outros objetos que não utilizam mais,
+                    mas não sabem onde podem doá-los.
+                </p>
+
+                <p>
+                    Nosso objetivo é conectar pessoas que querem doar com
+                    lugares que recebem diferentes tipos de doações.
+                </p>
+
+                <p class="mb-0 fw-semibold">
+                    Toda doação pode fazer a diferença!
+                </p>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer-giveit text-center py-4">
+        <p class="mb-0">Giveit | Doe o que você não usa. Ajude quem precisa.</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript: dropdown e menu mobile -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
